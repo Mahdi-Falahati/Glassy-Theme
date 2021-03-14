@@ -256,3 +256,153 @@ h3 {
     font-weight: bold;
     font-size: 22px;
 }
+
+#pro-mini {
+    width: 40px;
+    height: auto;
+    background-color: #ff1900;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    z-index: 2;
+    display: none;
+}
+
+.pro-mini {
+    width: 50px;
+    height: 120px;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    z-index: 2;
+    display: none;
+}
+
+.pro-mini a {
+    display: none;
+}
+
+.pro-mini:hover a {
+    display: block;
+    text-align: center;
+    color: #ffe600;
+    background-color: #690000;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.user-mini h3 {
+    background-color: #001e44;
+    color: #ffe600;
+    width: 60px;
+    padding: 6px;
+    border-radius: 20px;
+    display: none;
+}
+
+.user-mini:hover h3 {
+    display: block;
+}
+
+.user-mini {
+    width: 0px;
+    height: auto;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 2;
+    display: none;
+}
+
+.links-mini {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    margin: 0px 0;
+    z-index: 2;
+    display: none;
+}
+
+.links-mini img {
+    margin-left: 10px;
+    width: 40px;
+}
+
+.links-mini a {
+    text-decoration: none;
+}
+
+.links-mini h2 {
+    padding: 4px;
+    text-align: center;
+    background-color: #fa0202;
+    border-radius: 20px;
+    color: #ffe600;
+    display: none;
+}
+
+.links-mini .link-mini:hover h2 {
+    display: block;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:890px) {
+    .glass {
+        width: 80%;
+    }
+    .circle1 {
+        right: 2%;
+        top: 0;
+    }
+    .circle2 {
+        left: 2%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:641px) {
+    .glass {
+        width: 95%;
+    }
+    .status input {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:539px) {
+    h1 {
+        margin-top: 50px;
+    }
+    .circle1 ,.circle2,.dashboard , #pro-mini,.user-mini,.pro-mini{
+        display: none;
+    }
+    .links-mini {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .status input {
+        width: 90%;
+    }
+    body {
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        background: -o-linear-gradient(to right top, #65dfc9, #6cdbeb);
+        background: -moz-linear-gradient(to right top, #65dfc9, #6cdbeb);
+        background: -webkit-linear-gradient(to right top, #65dfc9, #6cdbeb);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .glass {
+        width: 100%;
+    }
+}
