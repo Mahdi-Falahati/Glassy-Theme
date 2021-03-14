@@ -3,7 +3,6 @@
     padding: 0%;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -28,6 +27,18 @@ main {
     align-items: center;
 }
 
+.glass {
+    background-color: #fff;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: -o-linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: -moz-linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: -webkit-linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    z-index: 2;
+    display: flex;
+}
 
 .circle1,
 .circle2 {
@@ -70,7 +81,6 @@ main {
     background: -webkit-linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 2rem;
 }
-
 
 .link {
     display: flex;
@@ -122,7 +132,6 @@ h3 {
     opacity: 0.8;
 }
 
-
 .user img {
     width: 67px;
     height: 67px;
@@ -153,4 +162,97 @@ h3 {
 #pro {
     width: 70px;
     height: 70px;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Games  */
+
+.status {
+    margin-bottom: 25px;
+}
+
+.status h1 {
+    margin-left: 20px;
+}
+
+.status input {
+    margin-top: 10px;
+    height: 25px;
+    width: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3rem;
+    border-bottom: 1px solid #ff1900;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.games {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    background: -webkit-linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    background: -moz-linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    background: -o-linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.9);
+    position: relative;
+}
+
+#progress-bar-assassinscreed,
+#progress-bar-spiderman,
+#progress-bar-warcraft {
+    content: "";
+    width: 0%;
+    height: 10px;
+    background: #e64a4a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border: 1px solid darkblue;
+}
+
+#progress-bar-assassinscreed {
+    width: 62%;
+}
+
+#progress-bar-spiderman {
+    width: 38%;
+}
+
+#progress-bar-warcraft {
+    width: 85%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.percentage {
+    font-weight: bold;
+    font-size: 22px;
 }
