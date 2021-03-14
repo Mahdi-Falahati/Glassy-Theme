@@ -380,8 +380,23 @@ h3 {
     h1 {
         margin-top: 50px;
     }
-    .circle1 ,.circle2,.dashboard , #pro-mini,.user-mini,.pro-mini{
+    .circle1 {
         display: none;
+    }
+    {
+        display: none;
+    }
+    .dashboard {
+        display: none;
+    }
+    #pro-mini {
+        display: block;
+    }
+    .user-mini {
+        display: block;
+    }
+    .pro-mini {
+        display: block;
     }
     .links-mini {
         display: flex;
